@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+
+    .desktop-image {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .mobile-image {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .desktop-image {
+        display: none;
+      }
+      .mobile-image {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Desktop/Large Screen Image -->
+  <img src="website-banner.png" alt="Coming Soon" class="desktop-image" />
+
+  <!-- Mobile Image -->
+  <img src="website-banner-mobile-layout.png" alt="Coming Soon" class="mobile-image" />
+</body>
+</html>
